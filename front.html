@@ -1,0 +1,25 @@
+<div class="editor-header">
+<span class="dot red"></span>
+<span class="dot yellow"></span>
+<span class="dot green"></span>
+</div>
+
+<div class="code-editor">
+<pre class="code-block">{{Question}}</pre>
+</div>
+
+<div class="hint-toggle" onclick="toggleHint()">💡 Pokaż podpowiedź</div>
+<div class="hint" id="hint">{{Type Hint}}</div>
+
+<div class="answer-input">{{type:Answer}}</div>
+
+<script>
+function toggleHint() {
+    var hint = document.getElementById("hint");
+    if (hint.style.display === "none" || hint.style.display === "") {
+    hint.style.display = "block";
+    } else {
+    hint.style.display = "none";
+    }
+}
+</script>
